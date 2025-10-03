@@ -8,5 +8,6 @@ router.post("/animals", (req, res) => {
  .save()
  .then((data) => res.json(data))
  .catch((error) => res.json({ message: error }));
+ 
 });
 module.exports = router;
